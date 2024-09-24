@@ -1,15 +1,35 @@
+:root {
+    --background-color: #f0f2f5;
+    --text-color: #333;
+    --header-background: #4CAF50;
+    --header-text-color: #fff;
+    --section-background: #fff;
+    --section-border-color: #4CAF50;
+    --link-color: #4CAF50;
+}
+
+body.dark-mode {
+    --background-color: #121212;
+    --text-color: #e0e0e0;
+    --header-background: #1e1e1e;
+    --header-text-color: #4CAF50;
+    --section-background: #1e1e1e;
+    --section-border-color: #4CAF50;
+    --link-color: #4CAF50;
+}
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f0f2f5;
-    color: #333;
+    background-color: var(--background-color);
+    color: var(--text-color);
 }
 
 header {
-    background: #4CAF50;
-    color: #fff;
+    background: var(--header-background);
+    color: var(--header-text-color);
     padding: 1.5rem 0;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -25,7 +45,7 @@ header p {
 }
 
 header p a {
-    color: #fff;
+    color: var(--header-text-color);
     text-decoration: none;
     margin: 0 10px;
     font-weight: bold;
@@ -38,16 +58,16 @@ header p a:hover {
 section {
     padding: 1.5rem;
     margin: 1.5rem auto;
-    background: #fff;
+    background: var(--section-background);
     border-radius: 8px;
     max-width: 800px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 h2 {
-    border-bottom: 2px solid #4CAF50;
+    border-bottom: 2px solid var(--section-border-color);
     padding-bottom: 0.5rem;
-    color: #4CAF50;
+    color: var(--section-border-color);
 }
 
 ul {
@@ -68,10 +88,22 @@ ul li ul {
 }
 
 #contact p a {
-    color: #4CAF50;
+    color: var(--link-color);
     text-decoration: none;
 }
 
 #contact p a:hover {
     text-decoration: underline;
+}
+
+.toggle-button {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background: var(--header-background);
+    color: var(--header-text-color);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
 }

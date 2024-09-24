@@ -7,8 +7,9 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <button class="toggle-button" onclick="toggleDarkMode()">Toggle Dark Mode</button>
     <header>
-        <h1>CHUKWUNEKU HIMOTHY</h1>
+        <h1>CHUKWUNEKU AKPOTOHWO</h1>
         <p>+234-8101694302 • <a href="https://github.com/nekumartins">GitHub</a> • <a href="https://linkedin.com/in/nekumartins">LinkedIn</a> • akpotohwoo@gmail.com</p>
     </header>
     <section id="education">
@@ -16,7 +17,7 @@
         <ul>
             <li>
                 <h3>Babcock University, Ogun, Nigeria</h3>
-                <p>B.Sc. Computer Science, CGPA: 4.33, July 2026</p>
+                <p>B.Sc. Computer Science, CGPA: 5.00, July 2026</p>
                 <p>Relevant Coursework: Database Management Systems, Discrete Mathematics, General Statistics, Statistical Methods I & II</p>
             </li>
             <li>
@@ -136,5 +137,10 @@
         <p>Email: akpotohwoo@gmail.com</p>
         <p>Phone: +234-8101694302</p>
     </section>
+    <script>
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark-mode');
+        }
+    </script>
 </body>
 </html>
